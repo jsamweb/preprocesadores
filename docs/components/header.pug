@@ -1,17 +1,5 @@
-mixin caja(imagen,titulo,contenido)
-	.caja 
-		.caja__imagen
-			img(src="./images/" + imagen)
-		.caja__contenido 
-			h3= titulo 
-			p= contenido
-			section.botones 
-				a.boton-2 Ver mas
-				a.boton-2 compartir 
--var titulos = ["Titulo Principal", "Subtitulo 1", "Subtitulo 2", "Subtitulo 3", "Subtitulo 4"]
--var user = ["Hola"]
-		block mixines
-		
+include configurations.pug 
+//- HEADER-HTML		
 doctype html
 html(lang="en")
 	include ./head.pug
@@ -23,3 +11,11 @@ html(lang="en")
 			else
 				a.boton(href="#") registro
 		block componentes
+		
+		//- BLOQUE-4-CAJAS
+		main.contenido
+			+caja("imagen.png", titulos[1], "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, laborum" )
+			+caja("imagen.png", titulos[1], "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, laborum" )
+			+caja("imagen.png", titulos[2], "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, laborum" )
+			+caja("imagen.png", titulos[3], "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, laborum" )
+		block cajas
