@@ -1,0 +1,41 @@
+-var titulo = "Sub-titulo Principal"
+-var titulos = ["Titulo Principal", "Subtitulo 1", "Subtitulo 2", "Subtitulo 3"]
+-var enlaces = ["acerca","contacto","FAQ"]
+-var datos = [" Carlos"," Mendez"," 666333222"," xxx@email.com"]
+mixin data(nombre,apellido,telefono,email)
+	p=nombre
+	p=apellido 
+	p=telefono 
+	p=email
+
+mixin caja(imagen,titulo,contenido)
+	.caja
+		.caja__imagen: img(src="images/"+imagen)
+		.caja__contenido
+			h3=titulo
+			p=contenido
+			a.boton leer mas
+
+//- DOCTYPE
+doctype html
+html
+	include head.pug
+	body
+		header
+			h1 PlatziGames
+			if usuario
+				a Hola #{usuario}
+			else
+				a(href="/docs/profile.html").boton Registro
+		block contenidos
+
+//- FOOTER 
+
+footer 
+	h2 Footer 
+	ul 
+		each link in enlaces 
+			li
+				a(href="#")= link
+           
+

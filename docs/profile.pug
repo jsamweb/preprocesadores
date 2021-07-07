@@ -1,0 +1,20 @@
+extend components/plantilla.pug
+block contenidos
+    section.intro  
+        div.intro__grid
+            img(src="/images/imagen.png", alt="imagen perfil")
+            h2 mi perfil
+            a.boton(href="#") editar mi perfil
+            a.boton(href="#") cerrar sesion
+        div.intro__grid
+            div.intro__contenido-profile 
+                +data("nombre: ",datos[0])
+            div.intro__contenido-profile
+                +data("Apellido: ",datos[1])
+            div.intro__contenido-profile
+                +data("telefono: ",datos[2])
+            div.intro__contenido-profile
+                +data("email: ",datos[3])
+        
+
+                
