@@ -87,6 +87,7 @@ h3 {
   max-width: 660px;
   margin: 0 auto;
   line-height: 33px;
+  padding: 0 2rem 0 2rem;
 }
 .articulo--principal__intro {
   font-size: 26px;
