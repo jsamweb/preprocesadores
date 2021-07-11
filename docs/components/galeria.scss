@@ -1,0 +1,31 @@
+@import "../components/globales.scss";
+.galeria{
+    display: grid;
+    width:80%;
+    height: auto;
+    margin:  20px auto;
+    padding: 20px;
+    @include caja;
+    grid-template-columns: repeat(3, 1fr);
+    
+    // grid-auto-rows: minmax(100px, auto);
+
+    &__foto-principal img{
+        margin: 0.15rem 0.5rem 0 0.5rem;
+        border-radius: 10px;
+    }
+    &__fotos-adicionales img{
+        margin: 0.15rem 0 0.3rem 0.3rem; 
+        border-radius: 10px;
+
+    }
+    h2{
+        margin-bottom: 10px;
+        font-family: 600;
+        font-size: 20px;
+        @include titulos($font-2);
+    }
+    
+}
+
+

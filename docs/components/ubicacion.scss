@@ -1,0 +1,41 @@
+@import "../components/globales.scss";
+.ubicacion--perfil{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	width: 80%;
+	height: auto;
+	padding:  20px;
+	@include caja;
+	div{
+		display: flex;
+		
+		
+	}
+	i{
+		display:inline-flex;
+		align-items: center;
+		padding-right: 10px;
+		font-size: 40px;
+		color: $color-4;
+	}
+	.title-ubi{
+		text-transform: uppercase;
+		align-self: center;
+		font-weight: 600;
+		font-size: 20px;
+		font-family: $font-2;
+		padding: 0 1rem 0 1rem;
+		margin: 0;
+		
+	}
+	.subtitle-ubi{
+		text-transform: uppercase;
+		align-self: center;
+		font-size: 12px;
+		font-family: $font-2;
+		
+		margin: 0;
+		
+	}
+}
