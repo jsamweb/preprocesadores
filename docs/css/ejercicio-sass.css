@@ -7,13 +7,19 @@ body {
   margin: 0;
   font-family: "lato", "sans-serif";
   font-family: "lato", "sans-serif";
+  width: 100%;
+  height: 100vh;
 }
 
 main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
 }
 
 * {
@@ -25,13 +31,19 @@ body {
   margin: 0;
   font-family: "lato", "sans-serif";
   font-family: "lato", "sans-serif";
+  width: 100%;
+  height: 100vh;
 }
 
 main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
 }
 
 .perfil {
@@ -47,6 +59,7 @@ main {
           align-items: center;
   max-width: 700px;
   width: 100%;
+  height: 100%;
   padding-top: 50px;
   color: #e2e2e2;
   background-color: #9e3490;
@@ -112,13 +125,19 @@ body {
   margin: 0;
   font-family: "lato", "sans-serif";
   font-family: "lato", "sans-serif";
+  width: 100%;
+  height: 100vh;
 }
 
 main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
 }
 
 .estadistica--perfil {
@@ -165,13 +184,19 @@ body {
   margin: 0;
   font-family: "lato", "sans-serif";
   font-family: "lato", "sans-serif";
+  width: 100%;
+  height: 100vh;
 }
 
 main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
 }
 
 .ubicacion--perfil {
@@ -240,13 +265,19 @@ body {
   margin: 0;
   font-family: "lato", "sans-serif";
   font-family: "lato", "sans-serif";
+  width: 100%;
+  height: 100vh;
 }
 
 main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
 }
 
 .galeria {
@@ -278,6 +309,61 @@ main {
   margin-bottom: 10px;
   font-family: 600;
   font-size: 20px;
+  font-family: "Oswald", "sans-serif";
+  text-transform: uppercase;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "lato", "sans-serif";
+  font-family: "lato", "sans-serif";
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+}
+
+.articulos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #e2e2e2;
+}
+
+.articulo {
+  width: 80%;
+  margin-top: 50px;
+}
+.articulo__categoria {
+  font-family: "Oswald", "sans-serif";
+  text-transform: uppercase;
+  font-size: 18px;
+  color: rgba(22, 22, 22, 0.5);
+}
+.articulo__titulo {
   font-family: "Oswald", "sans-serif";
   text-transform: uppercase;
 }

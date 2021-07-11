@@ -1,0 +1,24 @@
+@import "../components/globales.scss";
+.articulos{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+    height:auto;
+	background-color:$color-2 ;
+    
+}
+.articulo{
+    width: 80%;
+    margin-top: 50px;
+    &__categoria{
+        @include titulos($font-2);
+        font-size: 18px;
+        color: get-opacity($color-1, 0.5)
+    }
+    &__titulo{
+        @include titulos($font-2);
+        
+
+    }
+}

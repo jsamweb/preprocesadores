@@ -1,10 +1,13 @@
 $font-1: "lato", "sans-serif";
 $font-2: "Oswald", "sans-serif";
-$font-1: "lato", "sans-serif";
 $color-1:rgb(22, 22, 22);
 $color-2:rgb(226, 226, 226);
 $color-3:rgb(158, 52, 144);
 $color-4:rgb(63, 42, 179);
+
+@mixin b-font {
+	font-size: 18px;
+}
 @mixin caja{
 	max-width: 450px;
 	border-radius: 20px;
@@ -35,10 +38,13 @@ body {
 	margin: 0;
 	font-family:$font-1;
 	@include titulos($font-1);
+	width: 100%;
+	height:100vh;
+	
 }
 
 main {
 	display: flex;
-	width: 100%;
-	
+	flex-direction: row;
+	height: 100%;
 }
