@@ -1,0 +1,30 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+.buscador {
+  width: 100%;
+  height: 250px;
+  padding: 100px;
+  background: #37006a;
+  background: -webkit-gradient(linear, left bottom, left top, from(#37006a), color-stop(0%, #3c016e), color-stop(38%, #8f0fb1), color-stop(45%, #9e11bd), to(#d71beb));
+  background: linear-gradient(0deg, #37006a 0%, #3c016e 0%, #8f0fb1 38%, #9e11bd 45%, #d71beb 100%);
+  background-size: cover;
+  text-align: center;
+}
+.buscador__input {
+  width: 60%;
+  height: 60px;
+  padding: 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 25px;
+  font-weight: 600;
+  border: solid 3px;
+  color: #fff;
+}
