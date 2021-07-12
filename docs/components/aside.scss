@@ -11,6 +11,7 @@
 .articulo{
     width: 80%;
     margin-top: 50px;
+    border-bottom: solid 2px $color-1;
     &__categoria{
         @include titulos($font-2);
         font-size: 18px;

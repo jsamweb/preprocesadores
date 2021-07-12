@@ -1,8 +1,8 @@
 $font-1: "lato", "sans-serif";
 $font-2: "Oswald", "sans-serif";
-$color-1:rgb(22, 22, 22);
-$color-2:rgb(226, 226, 226);
-$color-3:rgb(158, 52, 144);
+$color-1:rgb(114, 42, 196);
+$color-2:rgb(223, 223, 223);
+$color-3:rgb(66, 66, 66);
 $color-4:rgb(63, 42, 179);
 
 @mixin b-font {
@@ -29,7 +29,12 @@ $color-4:rgb(63, 42, 179);
 @function get-opacity($color,$nivel){
 	@return rgba($color,$nivel);
 }
-
+@each $header, $size in (h1: 30px, h2: 20px, h3: 16px) {
+	#{$header}{
+		font-size: $size;
+		margin: 0;
+	}
+}
 *{
 	box-sizing: border-box;
 }
@@ -47,4 +52,5 @@ main {
 	display: flex;
 	flex-direction: row;
 	height: 100%;
+	width: 100%;
 }
