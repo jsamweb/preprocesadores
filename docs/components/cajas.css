@@ -1,0 +1,36 @@
+.contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.caja {
+  max-width: 400px;
+  height: auto;
+  margin: 1rem;
+}
+.caja__contenido {
+  height: 250px;
+  padding: 2rem;
+  background-color: color-2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.caja__contenido span {
+  text-transform: uppercase;
+  color: color-3;
+  font-family: font-2;
+}
+.caja__contenido h3 {
+  text-transform: uppercase;
+  font-family: font-2;
+  color: color-1;
+}
+.caja__contenido p {
+  color: color-1;
+}
