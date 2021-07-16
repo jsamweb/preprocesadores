@@ -1,0 +1,35 @@
+.footer--principal{
+    display: flex;
+    align-items: center;
+    height: 160px;
+    margin-top: 30px;
+    padding: 2rem;
+    background-color: $color-primario;
+}
+.nav--footer ul{
+    display: flex;
+    margin: 0;
+    // padding-top: 3rem;
+    li{
+        list-style: none;
+        margin-right: 50px;
+    }
+    a{
+        color: $color-claro;
+        @include titulos($Fuente2)
+    }
+}
+.nav--social{
+    margin-left: auto;
+    
+    ul{
+        display: flex;
+        margin: 0;
+        // padding-top: 3rem;
+    }
+    li{
+        list-style: none;
+        margin-right: 50px;
+        color: $color-claro;
+    }
+}

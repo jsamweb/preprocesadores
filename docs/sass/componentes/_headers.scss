@@ -1,0 +1,46 @@
+.header--principal{
+    display: flex;
+    padding: 2rem;
+    width: 100%;
+    height: 130px;
+    
+}
+.nav--header ul{
+    margin:  auto auto;
+    width: 70%;
+    display: none;
+    
+    li{
+        list-style: none;
+        padding: 0 1rem 0 1rem;
+    }
+    a{
+        font-family: $Fuente2;
+        @include titulos($Fuente2);
+    }
+    @include media(desktop-s){
+        display: flex;
+    }
+}
+.header__busqueda{
+    display: none;
+    align-items: center;
+    margin: 0;
+    
+    &:hover{
+        text-decoration: none;
+    }
+    i{
+        font-size: 20px;
+        margin-right: 10px;
+        color: $color-secundario;
+    }
+    span{
+        color: $color-variacion;
+        @include titulos($Fuente2);
+    }
+    @include media(desktop-s){
+        display: flex;
+    }
+
+}
